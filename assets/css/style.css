@@ -2,46 +2,44 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #ffffff;
-  color: #333;
+  color: #000;
 }
-
 header {
   background-color: #006400;
   color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.logo {
-  height: 60px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.banner img {
-  width: 100%;
-  height: auto;
-}
-
-.intro {
-  padding: 20px;
+  padding: 1rem;
   text-align: center;
 }
-
 footer {
   background-color: #006400;
   color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 40px;
+  padding: 1rem;
+  text-align: left;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+form input, form select, form button {
+  margin: 10px 0;
+  padding: 10px;
+}
+.map-container {
+  margin-top: 20px;
+}
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.logo {
+  height: 60px;
+  vertical-align: middle;
+}
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
 }

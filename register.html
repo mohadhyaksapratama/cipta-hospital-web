@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <title>Pendaftaran - Cipta Hospital Indonesia</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="assets/js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Pendaftaran Pasien</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header> ... (sama seperti di atas) ... </header>
-
+  <header>
+    <h1>Pendaftaran Pasien Baru</h1>
+  </header>
   <main>
-    <h2>Formulir Pendaftaran Pasien Baru</h2>
-    <form onsubmit="event.preventDefault(); showSuccessMessage();">
-      <label>Nama Lengkap:</label><br/>
-      <input type="text" required/><br/>
-      <label>Nomor HP:</label><br/>
-      <input type="tel" required/><br/>
-      <label>Pilih Poli:</label><br/>
-      <select required>
-        <option>Poli Umum</option>
-        <option>Poli Gigi</option>
-        <option>Poli Anak</option>
-        <option>Poli Kandungan</option>
-        <option>UGD</option>
-      </select><br/><br/>
+    <form action="#" method="post">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telepon">Nomor Telepon:</label>
+      <input type="tel" id="telepon" name="telepon" required>
+
+      <label for="poli">Pilih Poli:</label>
+      <select id="poli" name="poli">
+        <option value="umum">Poli Umum</option>
+        <option value="gigi">Poli Gigi</option>
+        <option value="anak">Poli Anak</option>
+        <option value="kandungan">Poli Kandungan</option>
+        <option value="ugd">UGD</option>
+      </select>
+
       <button type="submit">Daftar</button>
     </form>
   </main>
-
-  <footer> ... </footer>
+  <footer>
+    <p>© 2025 MOH ADHYAKSA PRATAMA</p>
+  </footer>
 </body>
 </html>
